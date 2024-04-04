@@ -1,0 +1,80 @@
+
+   
+    
+    body {
+        background-color: rgb(173, 139, 115);
+       margin-left: 40px;
+       margin-top: 20px;
+       margin-right: 40px;
+    }
+       h1 {
+        text-align:center;
+        font-size: 150px;
+        color:rgb(206, 171, 147);
+    }
+    
+  
+    #Chars {
+        text-align:left;
+        font-size: 100px;
+        color:rgb(255, 251, 233);
+    }
+    #KI {
+        text-align:center;
+        font-size: 100px;
+        color:rgb(255, 251, 233);
+    }
+    #C {
+        text-align:left;
+        font-size: 100px;
+        color:rgb(255, 251, 233);
+    }
+    #Rev {
+        text-align:center;
+        font-size: 100px;
+        color:rgb(255, 251, 233);
+    }
+
+    h2 {
+        text-align:center;
+        font-size: 100px;
+        color:rgb(255, 251, 233);
+    }
+
+    p {
+        
+        text-shadow: 15cm;
+        font-family: monospace;
+        font-size:28px;
+        color:rgb(227, 202, 165);
+    }
+
+    ul{
+        font-family: monospace;
+        font-size:30px;
+        color:rgb(255, 251, 233);
+    }
+    a:link {
+        font-size-adjust: 10px;
+        color: rgb(255, 251, 233);
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: rgb(255, 251, 233);
+        background-color: transparent;
+        text-decoration: underline;
+    }       
+    
+
+
+
+
+     
+
+
