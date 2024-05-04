@@ -1,0 +1,90 @@
+<!DOCTYPE html><!-- we start our code from here-->
+    <head>
+       <title>Petrol Calculator</title>
+        </head>
+    <body>
+        <div class="container">
+            <h1>Petrol Calculator</h1>
+            <input type="number" id="petrolCost"  value="1.72" placeholder="Cost per liter" autofocus>
+            <input type="number" id="litersPurchased"  value="0" placeholder="Liters purchased">
+            <button id="calculateButton">Calculate</button>
+            <p id="totalCost"></p>
+        </div>
+        <!-- we used java script here to calculate cost-->
+    <script> 
+const petrolCostInput = document.getElementById('petrolCost'); 
+const litersPurchasedInput = document.getElementById('litersPurchased');
+const calculateButton = document.getElementById('calculateButton');
+const totalCostDisplay = document.getElementById('totalCost');
+
+function calculateTotalCost() {  //this is the function to calculate the cost
+
+    const petrolCost = petrolCostInput.value;           // here we will get the value the user will enter
+    const litersPurchased = litersPurchasedInput.value;
+
+    const totalCost = petrolCost * litersPurchased;    //  over here we calculate the total cost
+
+totalCostDisplay.textContent = "Total cost: AED" + totalCost.toFixed(2);  // and here we will display the total cost
+
+}
+calculateButton.addEventListener('click', calculateTotalCost);  
+</script>
+<!-- from here we start our css -->
+    <style>
+        body {
+    font-family:Georgia;
+    background-color: #f4f4f4;
+    margin: 0;
+    
+}
+
+.container {
+    max-width: 450px;
+    margin: 80px auto;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin-bottom: 30px;
+}
+
+
+input[type="number"] {
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+
+    background-color: #5a6d15;
+    color: #fff;
+    font-size: 19px;
+    cursor:grab;
+}
+
+button:hover {
+    background-color: #cfea34;
+}
+
+p#totalCost {
+  font-family: Georgia;
+    color: #cfea34;
+    font-size: 20px;
+    font-weight:400;
+    text-align: center;
+   
+}
+
+ </style>
+</body>
+</html>
